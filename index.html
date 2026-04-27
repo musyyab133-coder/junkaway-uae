@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JunkAway UAE | Junk Removal Dubai</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(to bottom,#f0fdf4,#ecfeff);
+color:#0f172a;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+overflow:hidden;
+
+background:
+linear-gradient(rgba(15,23,42,0.6),rgba(34,197,94,0.5)),
+url('https://images.unsplash.com/photo-1581579185169-3f9c5f6a1f7b') center/cover no-repeat;
+}
+
+/* WATERMARK IMAGES */
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:
+url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d') 10% 20%/120px no-repeat,
+url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7') 80% 30%/120px no-repeat,
+url('https://images.unsplash.com/photo-1497366216548-37526070297c') 20% 80%/120px no-repeat,
+url('https://images.unsplash.com/photo-1604187351574-c75ca79f5807') 85% 75%/120px no-repeat;
+
+opacity:0.12;
+pointer-events:none;
+z-index:0;
+}
+
+/* KEEP TEXT ABOVE */
+.hero h1,
+.hero p,
+.hero .btn{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:800;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+}
+
+.btn{
+margin-top:20px;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+}
+
+/* TRUST */
+.trust{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:15px;
+background:#dcfce7;
+font-weight:bold;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:15px;
+}
+
+/* CARD */
+.card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card p{
+padding:12px;
+text-align:center;
+font-weight:bold;
+}
+
+/* LIST BOX */
+.list-box{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+max-width:700px;
+margin:auto;
+}
+
+.list-box ul{
+list-style:none;
+}
+
+.list-box li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
+
+.list-box li:last-child{
+border:none;
+}
+
+/* DANGER */
+.danger{
+background:#fff1f2;
+border:1px solid #fecaca;
+}
+
+.danger li{
+color:#b91c1c;
+}
+
+/* FORM */
+form{
+background:white;
+padding:20px;
+border-radius:14px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0f172a;
+color:white;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.float a{
+width:52px;
+height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+color:white;
+font-size:20px;
+text-decoration:none;
+}
+
+.call{background:#2563eb;}
+.wa{background:#16a34a;}
+
+</style>
+
+<script>
+function sendWA(){
+let n=document.getElementById("n").value;
+let p=document.getElementById("p").value;
+let m=document.getElementById("m").value;
+
+let url="https://wa.me/971529267678?text="
++"JunkAway UAE Request%0A"
++"Name: "+n+"%0A"
++"Phone: "+p+"%0A"
++"Request: "+m;
+
+window.open(url,"_blank");
+return false;
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div>♻ JunkAway UAE</div>
+<div>Dubai Junk Removal</div>
+</header>
+
+<div class="hero">
+<h1>Fast & Reliable Junk Removal in Dubai</h1>
+<p>Same Day Pickup • Affordable • Professional</p>
+<a class="btn" href="https://wa.me/971529267678">Get Free Quote</a>
+</div>
+
+<div class="trust">
+<div>⚡ Same Day</div>
+<div>💰 Best Price</div>
+<div>🚛 Professional</div>
+<div>🌱 Eco Friendly</div>
+</div>
+
+<section>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"><p>House Junk</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7"><p>Furniture</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c"><p>Office</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807"><p>Construction</p></div>
+</div>
+</section>
+
+<section>
+<h2>What We Take</h2>
+<div class="list-box">
+<ul>
+<li>✔ Fridge & Freezers</li>
+<li>✔ Furniture & Sofas</li>
+<li>✔ Mattresses & Carpets</li>
+<li>✔ Electronics & TVs</li>
+<li>✔ Computers & Laptops</li>
+<li>✔ Cabinets</li>
+<li>✔ Office Waste</li>
+<li>✔ Renovation Debris</li>
+<li>✔ Scrap Metal</li>
+<li>✔ Cardboards</li>
+<li>✔ Tires</li>
+<li>✔ Appliances</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>What We Do NOT Take</h2>
+<div class="list-box danger">
+<p>We do not handle hazardous materials:</p>
+<ul>
+<li>✖ Gas Cylinders</li>
+<li>✖ Chemicals & Paints</li>
+<li>✖ Oils & Pesticides</li>
+<li>✖ Medical Waste</li>
+<li>✖ Weapons</li>
+<li>✖ Toxic Materials</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Book Pickup</h2>
+<form onsubmit="return sendWA()">
+<input id="n" placeholder="Your Name" required>
+<input id="p" placeholder="Phone Number" required>
+<textarea id="m" placeholder="What do you need removed?" required></textarea>
+<button class="btn">Send on WhatsApp</button>
+</form>
+</section>
+
+<footer>
+© 2026 JunkAway UAE
+</footer>
+
+<div class="float">
+<a class="call" href="tel:+971529267678">📞</a>
+<a class="wa" href="https://wa.me/971529267678">💬</a>
+</div>
+
+</body>
+</html>
