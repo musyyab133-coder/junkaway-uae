@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JUNKAWAY UAE | Premium Junk Removal Dubai</title>
+<meta name="description" content="Professional junk removal in Dubai. Same day pickup, furniture removal, office clearance, villa cleanouts, warehouse waste removal and eco friendly disposal.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#ffffff;
+color:#1a1a1a;
+line-height:1.6;
+}
+
+.container{
+width:92%;
+max-width:1320px;
+margin:auto;
+}
+
+/* HEADER */
+header{
+background:#0f7a35;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo h1{
+font-family:'Montserrat',sans-serif;
+font-size:34px;
+font-weight:900;
+color:#fff;
+letter-spacing:2px;
+}
+
+.logo span{
+font-size:13px;
+color:#dff7e7;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:24px;
+font-family:'Montserrat',sans-serif;
+font-weight:700;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d8ffd8;
+}
+
+/* HERO */
+.hero{
+background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80') center/cover;
+position:relative;
+}
+
+.overlay{
+background:rgba(0,0,0,.62);
+padding:130px 20px;
+text-align:center;
+color:#fff;
+}
+
+.hero h2{
+font-family:'Montserrat',sans-serif;
+font-size:60px;
+font-weight:900;
+margin-bottom:18px;
+}
+
+.hero p{
+font-size:22px;
+max-width:900px;
+margin:auto;
+margin-bottom:35px;
+color:#f1f1f1;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+margin:6px;
+transition:.3s;
+font-family:'Montserrat',sans-serif;
+}
+
+.call{
+background:#0f7a35;
+color:#fff;
+}
+
+.whatsapp{
+background:#25D366;
+color:#fff;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+opacity:.92;
+}
+
+/* SECTION */
+section{
+padding:90px 0;
+}
+
+.title{
+font-family:'Montserrat',sans-serif;
+text-align:center;
+font-size:44px;
+font-weight:900;
+margin-bottom:50px;
+color:#0f7a35;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px;
+}
+
+/* CARDS */
+.card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+border-bottom:5px solid #0f7a35;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.content{
+padding:24px;
+}
+
+.content h3{
+font-family:'Montserrat',sans-serif;
+font-size:24px;
+margin-bottom:10px;
+color:#0f7a35;
+}
+
+/* LIGHT BG */
+.gray{
+background:#f4fbf6;
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:24px;
+text-align:center;
+}
+
+.stat{
+background:#fff;
+padding:35px 20px;
+border-radius:18px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.stat h4{
+font-size:42px;
+font-family:'Montserrat',sans-serif;
+color:#0f7a35;
+}
+
+/* ABOUT */
+.about{
+max-width:950px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#444;
+}
+
+/* REVIEWS */
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+
+.review{
+background:#fff;
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+border-left:5px solid #0f7a35;
+}
+
+.review h4{
+font-family:'Montserrat',sans-serif;
+color:#0f7a35;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+background:#0f7a35;
+color:#fff;
+text-align:center;
+padding:80px 20px;
+}
+
+.contact h2{
+font-family:'Montserrat',sans-serif;
+font-size:42px;
+margin-bottom:15px;
+}
+
+.phone{
+font-size:34px;
+font-weight:900;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+background:#06381a;
+color:#fff;
+text-align:center;
+padding:28px;
+font-size:15px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.hero h2{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.title{
+font-size:32px;
+}
+
+nav{
+margin-top:12px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.logo h1{
+font-size:28px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+<h1>JUNKAWAY UAE</h1>
+<span>Premium Waste Pickup Services</span>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Reviews</a>
+<a href="#">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="overlay">
+
+<h2>Dubai’s Trusted Junk Removal Experts</h2>
+
+<p>
+Same Day Pickup • Furniture Removal • Office Clearance • Villa Cleanouts • Warehouse Waste • Eco Friendly Disposal
+</p>
+
+<a href="tel:0529267678" class="btn call">Call Now</a>
+<a href="https://wa.me/971529267678" class="btn whatsapp">WhatsApp</a>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Our Premium Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>Furniture Removal</h3>
+<p>Sofas, beds, wardrobes, dining sets and all heavy furniture removed quickly.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>Office Clearance</h3>
+<p>Desks, computers, office chairs, cabinets and commercial junk pickup.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>Villa Cleanouts</h3>
+<p>Full villa and apartment clearing including storage rooms and garages.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80">
+<div class="content">
+<h3>Construction Waste</h3>
+<p>Tiles, wood, drywall, debris and renovation waste removed safely.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="gray">
+<div class="container">
+
+<h2 class="title">Why Choose Us</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h4>30 Min</h4>
+<p>Fast Arrival Time</p>
+</div>
+
+<div class="stat">
+<h4>24/7</h4>
+<p>Available Anytime</p>
+</div>
+
+<div class="stat">
+<h4>100%</h4>
+<p>Trusted Team</p>
+</div>
+
+<div class="stat">
+<h4>Eco</h4>
+<p>Responsible Disposal</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">About JUNKAWAY UAE</h2>
+
+<div class="about">
+JUNKAWAY UAE provides reliable junk removal services all across Dubai. We help homes, villas, offices, warehouses and commercial businesses remove unwanted items fast and professionally. Our trained crew handles lifting, loading, transport and proper disposal so you don’t need to worry. We focus on punctual service, fair prices and customer satisfaction every day.
+</div>
+
+</div>
+</section>
+
+<section class="gray">
+<div class="container">
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+<h4>★★★★★ Sarah M.</h4>
+Amazing service. Team arrived on time and removed old furniture very quickly.
+</div>
+
+<div class="review">
+<h4>★★★★★ Ahmed R.</h4>
+Best junk removal company in Dubai. Friendly workers and fair pricing.
+</div>
+
+<div class="review">
+<h4>★★★★★ David K.</h4>
+Easy WhatsApp booking and same day pickup. Highly recommended.
+</div>
+
+<div class="review">
+<h4>★★★★★ Fatima L.</h4>
+Professional staff cleaned our villa storage room perfectly.
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+
+<h2>Book Your Pickup Today</h2>
+<div class="phone">052 92 6767 8</div>
+
+<a href="tel:0529267678" class="btn" style="background:#fff;color:#0f7a35;">Call Now</a>
+<a href="https://wa.me/971529267678" class="btn whatsapp">WhatsApp</a>
+
+</section>
+
+<footer>
+© 2025 JUNKAWAY UAE | Junk Removal Dubai UAE
+</footer>
+
+</body>
+</html>
