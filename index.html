@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JunkAway UAE | Junk Removal Dubai</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(to bottom,#f0fdf4,#ecfeff);
+color:#0f172a;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:bold;
+font-size:18px;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(15,23,42,0.55),rgba(34,197,94,0.45)),
+url('https://images.unsplash.com/photo-1581579185169-3f9c5f6a1f7b') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:52px;
+max-width:900px;
+font-weight:800;
+text-shadow:0 3px 10px rgba(0,0,0,0.4);
+}
+
+.hero p{
+margin-top:12px;
+font-size:18px;
+opacity:0.95;
+}
+
+.rating{
+margin-top:20px;
+font-size:14px;
+}
+
+/* BUTTON */
+.btn{
+margin-top:25px;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(34,197,94,0.4);
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:linear-gradient(135deg,#16a34a,#15803d);
+}
+
+/* TRUST */
+.trust{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:18px;
+background:linear-gradient(to right,#dcfce7,#ccfbf1);
+font-size:14px;
+font-weight:600;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:15px;
+}
+
+/* CARD */
+.card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(34,197,94,0.25);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.card p{
+padding:12px;
+text-align:center;
+font-weight:bold;
+}
+
+/* FORM */
+form{
+background:white;
+padding:20px;
+border-radius:14px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0f172a;
+color:white;
+margin-top:20px;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.float a{
+width:52px;
+height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+color:white;
+font-size:20px;
+text-decoration:none;
+}
+
+.call{
+background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.wa{
+background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+</style>
+
+<script>
+function sendWA(){
+let n=document.getElementById("n").value;
+let p=document.getElementById("p").value;
+let m=document.getElementById("m").value;
+
+let url="https://wa.me/971529267678?text="
++"JunkAway UAE Request%0A"
++"Name: "+n+"%0A"
++"Phone: "+p+"%0A"
++"Request: "+m;
+
+window.open(url,"_blank");
+return false;
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">♻ JunkAway UAE</div>
+<div>Dubai Junk Removal</div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Fast & Reliable Junk Removal in Dubai</h1>
+<p>Same Day Pickup • Clean Work • Affordable Service</p>
+
+<div class="rating">
+⭐⭐⭐⭐⭐ Trusted by 500+ Customers
+</div>
+
+<a class="btn" href="https://wa.me/971529267678">Get Free Quote</a>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+<div>⚡ Same Day</div>
+<div>💰 Best Price</div>
+<div>🚛 Professional Team</div>
+<div>🌱 Eco Friendly</div>
+</div>
+
+<!-- SERVICES -->
+<section>
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+<p>House Junk Removal</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7">
+<p>Furniture Disposal</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c">
+<p>Office Clearance</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807">
+<p>Construction Waste</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOK -->
+<section>
+<h2>Book Pickup</h2>
+
+<form onsubmit="return sendWA()">
+<input id="n" placeholder="Your Name" required>
+<input id="p" placeholder="Phone Number" required>
+<textarea id="m" placeholder="What do you need removed?" required></textarea>
+<button class="btn" type="submit">Send on WhatsApp</button>
+</form>
+
+</section>
+
+<footer>
+© 2026 JunkAway UAE
+</footer>
+
+<!-- FLOAT -->
+<div class="float">
+<a class="call" href="tel:+971529267678">📞</a>
+<a class="wa" href="https://wa.me/971529267678">💬</a>
+</div>
+
+</body>
+</html>
