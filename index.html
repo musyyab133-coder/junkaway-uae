@@ -1,0 +1,160 @@
+// pages/index.js
+
+import Head from "next/head";
+import { Phone, MessageCircle, Trash2, CheckCircle, Star } from "lucide-react";
+
+export default function Home() {
+  const services = [
+    "Furniture Removal",
+    "Office Junk Removal",
+    "Appliance Pickup",
+    "Villa Cleanouts",
+    "Construction Waste",
+    "Same Day Service",
+  ];
+
+  const benefits = [
+    "30 Min Response",
+    "Free Estimate",
+    "24/7 Support",
+    "Eco Friendly",
+  ];
+
+  return (
+    <>
+      <Head>
+        <title>Best Junk Removal Dubai | Same Day Pickup</title>
+        <meta
+          name="description"
+          content="Dubai junk removal services. Same day pickup, furniture removal, office cleanouts, villa junk removal. Call now."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+      <main className="font-sans text-gray-800 bg-white min-h-screen">
+
+        {/* HERO */}
+        <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white px-6 py-16 md:py-24 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Best Junk Removal in Dubai
+          </h1>
+
+          <p className="text-lg md:text-2xl mb-8">
+            Same Day Pickup • Free Estimate • Eco Friendly Disposal
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:0529267678"
+              className="bg-white text-green-700 px-6 py-3 rounded-2xl font-bold shadow-lg flex items-center gap-2"
+            >
+              <Phone size={20} />
+              Call Now
+            </a>
+
+            <a
+              href="https://wa.me/971529267678"
+              className="bg-black text-white px-6 py-3 rounded-2xl font-bold shadow-lg flex items-center gap-2"
+            >
+              <MessageCircle size={20} />
+              WhatsApp
+            </a>
+          </div>
+        </section>
+
+        {/* SERVICES */}
+        <section className="px-6 py-16">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            Our Services
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="border rounded-3xl p-6 shadow hover:shadow-xl transition"
+              >
+                <Trash2 className="text-green-600 mb-4" size={30} />
+                <h3 className="text-xl font-bold">{service}</h3>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* WHY US */}
+        <section className="bg-gray-50 px-6 py-16">
+          <h2 className="text-3xl font-bold text-center mb-10">
+            Why Choose Us
+          </h2>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {benefits.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow p-6 text-center"
+              >
+                <CheckCircle
+                  className="mx-auto text-green-600 mb-4"
+                  size={28}
+                />
+                <p className="font-semibold">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* REVIEWS */}
+        <section className="px-6 py-16 text-center">
+          <h2 className="text-3xl font-bold mb-10">
+            Customer Reviews
+          </h2>
+
+          <div className="max-w-2xl mx-auto shadow-xl rounded-3xl p-8">
+            <div className="flex justify-center gap-1 mb-4">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <Star
+                  key={i}
+                  className="fill-yellow-400 text-yellow-400"
+                  size={22}
+                />
+              ))}
+            </div>
+
+            <p className="text-lg">
+              Fast, professional and affordable junk removal in Dubai.
+              Highly recommended.
+            </p>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="bg-green-600 text-white px-6 py-16 text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            Book Your Pickup Today
+          </h2>
+
+          <p className="mb-8">
+            Call or WhatsApp now for instant booking
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="tel:0529267678"
+              className="bg-white text-green-700 px-6 py-3 rounded-2xl font-bold"
+            >
+              052 92 6767 8
+            </a>
+
+            <a
+              href="https://wa.me/971529267678"
+              className="bg-black text-white px-6 py-3 rounded-2xl font-bold"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </section>
+
+      </main>
+    </>
+  );
+}
