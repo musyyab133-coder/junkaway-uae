@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JunkAway UAE | Junk Removal Dubai</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+
+body{
+background:linear-gradient(to bottom,#ecfeff,#f0fdf4);
+color:#0f172a;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,0.06);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* LOGO IMAGE */
+.logo img{
+height:50px;
+}
+
+/* HERO */
+.hero{
+position:relative;
+height:92vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+
+background:
+linear-gradient(rgba(15,23,42,0.75),rgba(34,197,94,0.65)),
+url('https://images.unsplash.com/photo-1604186838309-c6715f0d3f3a') center/cover no-repeat;
+}
+
+/* YOUR LOGO WATERMARK */
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:url('YOUR-LOGO.png') center/contain no-repeat;
+opacity:0.08;
+z-index:0;
+}
+
+/* TEXT ABOVE */
+.hero *{
+position:relative;
+z-index:1;
+}
+
+.hero h1{
+font-size:46px;
+font-weight:900;
+animation:fadeUp 1s ease;
+}
+
+.hero p{
+margin-top:12px;
+font-size:18px;
+animation:fadeUp 1.3s ease;
+}
+
+.btn{
+margin-top:25px;
+background:linear-gradient(135deg,#22c55e,#16a34a);
+color:white;
+padding:16px 32px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(34,197,94,0.4);
+animation:fadeUp 1.6s ease;
+}
+
+/* TRUST */
+.trust{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:18px;
+background:#dcfce7;
+font-weight:bold;
+}
+
+/* SECTION */
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:28px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* FORM */
+form{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.float a{
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+color:white;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.call{background:#2563eb;}
+.wa{background:#16a34a;}
+
+/* ANIMATION */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+
+<script>
+function sendWA(){
+let n=document.getElementById("n").value;
+let p=document.getElementById("p").value;
+let m=document.getElementById("m").value;
+
+let url="https://wa.me/971529267678?text="
++"JunkAway UAE Request%0A"
++"Name: "+n+"%0A"
++"Phone: "+p+"%0A"
++"Request: "+m;
+
+window.open(url,"_blank");
+return false;
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="YOUR-LOGO.png" alt="JunkAway UAE Logo">
+</div>
+<div><b>Dubai Junk Removal</b></div>
+</header>
+
+<div class="hero">
+<h1>Fast & Reliable Junk Removal in Dubai</h1>
+<p>Same Day Pickup • Affordable • Professional</p>
+<a class="btn" href="https://wa.me/971529267678">Get Free Quote</a>
+</div>
+
+<div class="trust">
+<div>⚡ Same Day</div>
+<div>💰 Best Price</div>
+<div>🚛 Professional Team</div>
+<div>🌱 Eco Friendly</div>
+</div>
+
+<section>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">House Junk Removal</div>
+<div class="card">Furniture Removal</div>
+<div class="card">Office Clearance</div>
+<div class="card">Construction Waste</div>
+</div>
+</section>
+
+<section>
+<h2>Book Pickup</h2>
+<form onsubmit="return sendWA()">
+<input id="n" placeholder="Your Name" required>
+<input id="p" placeholder="Phone Number" required>
+<textarea id="m" placeholder="What do you need removed?" required></textarea>
+<button class="btn">Send on WhatsApp</button>
+</form>
+</section>
+
+<div class="float">
+<a class="call" href="tel:+971529267678">📞</a>
+<a class="wa" href="https://wa.me/971529267678">💬</a>
+</div>
+
+</body>
+</html>
