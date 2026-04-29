@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JunkAway UAE | Premium Junk Removal Dubai</title>
+<meta name="description" content="Same day junk removal Dubai. Furniture removal, scrap pickup, villa cleanout and office clearance. Call or WhatsApp JunkAway UAE today.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fafc;
+color:#111827;
+line-height:1.6;
+overflow-x:hidden;
+}
+a{text-decoration:none}
+img{max-width:100%}
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(8px);
+padding:14px 18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 18px rgba(0,0,0,.06);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:24px;
+font-weight:800;
+color:#0f172a;
+}
+
+.logo span{
+width:42px;
+height:42px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#10b981,#0ea5e9);
+color:#fff;
+font-size:22px;
+}
+
+nav a{
+margin-left:14px;
+font-size:14px;
+font-weight:700;
+color:#0f172a;
+}
+
+.hero{
+padding:80px 18px;
+text-align:center;
+background:
+linear-gradient(rgba(15,23,42,.65),rgba(15,23,42,.65)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+color:#fff;
+}
+
+.hero h1{
+font-size:48px;
+line-height:1.1;
+font-weight:800;
+max-width:900px;
+margin:auto;
+}
+
+.hero p{
+max-width:760px;
+margin:18px auto 26px;
+font-size:18px;
+color:#e5e7eb;
+}
+
+.btn{
+display:inline-block;
+padding:15px 26px;
+border-radius:14px;
+font-weight:700;
+margin:8px;
+transition:.25s;
+}
+
+.btn:hover{transform:translateY(-2px)}
+
+.call{
+background:#facc15;
+color:#111827;
+}
+
+.wa{
+background:#22c55e;
+color:#fff;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin-top:18px;
+}
+
+.badges span{
+background:rgba(255,255,255,.15);
+padding:10px 14px;
+border-radius:40px;
+font-size:14px;
+}
+
+.wrap{
+max-width:1180px;
+margin:auto;
+padding:70px 18px;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+font-weight:800;
+margin-bottom:34px;
+color:#0f172a;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:22px;
+}
+
+.card{
+background:#fff;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:190px;
+object-fit:cover;
+}
+
+.card .content{
+padding:20px;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.card p{
+font-size:15px;
+color:#475569;
+}
+
+.dark{
+background:#0f172a;
+color:#fff;
+}
+
+.dark .title{color:#fff}
+
+.dark .card{
+background:#172033;
+box-shadow:none;
+}
+
+.dark .card h3{color:#fff}
+.dark .card p{color:#cbd5e1}
+
+.review{
+padding:22px;
+background:#fff;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+font-weight:600;
+}
+
+.cta{
+background:linear-gradient(135deg,#10b981,#0ea5e9);
+color:#fff;
+text-align:center;
+padding:70px 18px;
+}
+
+.cta h2{
+font-size:42px;
+font-weight:800;
+}
+
+.cta p{
+margin:12px 0 22px;
+font-size:18px;
+}
+
+footer{
+background:#0f172a;
+color:#fff;
+text-align:center;
+padding:28px 18px;
+font-size:15px;
+}
+
+.float{
+position:fixed;
+right:14px;
+bottom:14px;
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:999;
+}
+
+.float a{
+padding:14px 18px;
+border-radius:50px;
+font-weight:700;
+box-shadow:0 12px 24px rgba(0,0,0,.18);
+}
+
+@media(max-width:768px){
+header{
+flex-direction:column;
+gap:10px;
+padding:14px;
+}
+nav a{margin:0 8px}
+.hero{
+padding:60px 16px;
+}
+.hero h1{
+font-size:34px;
+}
+.hero p{
+font-size:16px;
+}
+.title{
+font-size:30px;
+}
+.cta h2{
+font-size:30px;
+}
+.btn{
+display:block;
+max-width:320px;
+margin:10px auto;
+}
+.grid{
+grid-template-columns:1fr;
+}
+.logo{
+font-size:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo"><span>♻</span> JUNKAWAY UAE</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="tel:0529267678">Call</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Dubai’s Premium Junk Removal Service</h1>
+<p>Same day furniture removal, scrap pickup, villa cleanouts and office waste removal anywhere in Dubai.</p>
+
+<a href="tel:0529267678" class="btn call">📞 Call 052 92 67 67 8</a>
+<a href="https://wa.me/971529267678" class="btn wa">WhatsApp Now</a>
+
+<div class="badges">
+<span>Same Day Pickup</span>
+<span>Affordable Rates</span>
+<span>Open 7 Days</span>
+<span>All Dubai Areas</span>
+</div>
+</section>
+
+<section class="wrap" id="services">
+<h2 class="title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<div class="content">
+<h3>Furniture Removal</h3>
+<p>Old sofas, beds, wardrobes and unwanted furniture removed quickly.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800">
+<div class="content">
+<h3>Scrap Pickup</h3>
+<p>Metal, electronics, appliances and recyclable junk collection.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800">
+<div class="content">
+<h3>Villa Cleanout</h3>
+<p>Move-out cleaning and full property junk clearance services.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800">
+<div class="content">
+<h3>Office Clearance</h3>
+<p>Desks, cabinets, chairs and office waste disposal solutions.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="wrap dark">
+<h2 class="title">Why Choose Us</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="content">
+<h3>Fast Response</h3>
+<p>Quick arrival and easy booking by call or WhatsApp.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="content">
+<h3>Trusted Team</h3>
+<p>Professional and friendly staff with experience.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="content">
+<h3>Fair Pricing</h3>
+<p>No hidden charges. Clear and honest quotes.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="content">
+<h3>Dubai Coverage</h3>
+<p>Serving Marina, JVC, Jumeirah, Barsha, Downtown and more.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="wrap" id="reviews">
+<h2 class="title">Customer Reviews</h2>
+
+<div class="grid">
+<div class="review">★★★★★ Fast and professional team. Highly recommended.</div>
+<div class="review">★★★★★ Removed my furniture same day. Great price.</div>
+<div class="review">★★★★★ Best junk removal service in Dubai.</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Need Junk Gone Today?</h2>
+<p>Call or WhatsApp now for immediate booking.</p>
+
+<a href="tel:0529267678" class="btn call">Call Now</a>
+<a href="https://wa.me/971529267678" class="btn wa">WhatsApp</a>
+</section>
+
+<footer>
+JunkAway UAE • junkawayuae.online • 052 92 67 67 8
+</footer>
+
+<div class="float">
+<a href="https://wa.me/971529267678" class="wa">WhatsApp</a>
+<a href="tel:0529267678" class="call">Call</a>
+</div>
+
+</body>
+</html>
